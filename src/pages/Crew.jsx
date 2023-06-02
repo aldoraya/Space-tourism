@@ -5,6 +5,7 @@ import data from "../data/data.json";
 
 const Crew = () => {
   const [crewData, setCrewData] = useState({
+    id: data.crew[0].id,
     name: data.crew[0].name,
     image: data.crew[0].images.png,
     role: data.crew[0].role,
@@ -13,6 +14,7 @@ const Crew = () => {
 
   const handleCrewsData = (item) => {
     setCrewData({
+      id: item.id,
       name: item.name,
       image: item.images.png,
       role: item.role,
@@ -25,7 +27,7 @@ const Crew = () => {
       <div className="text-white text-center lg:text-left p-8 md:pt-32 md:px-32 lg:p-44 block lg:flex relative top-44 md:top-40 lg:top-12 w-full h-0 lg:h-screen z-0 animate-fade-in-left">
         <div className="flex flex-1 justify-center md:justify-normal w-full h-full">
           <div className="flex flex-col justify-center lg:justify-start w-full h-full lg:h-[70vh]">
-            <div className="flex flex-1 justify-center md:justify-start uppercase space-x-4 tracking-widest text-lg md:text-xl lg:text-3xl">
+            <div className="flex flex-1 justify-center md:justify-start uppercase space-x-4 tracking-widest text-lg md:text-xl lg:text-2xl">
               <nav className="text-gray-500 font-bold">02</nav>
               <p>meet your crew</p>
             </div>
@@ -55,7 +57,7 @@ const Crew = () => {
                     id={item.id}
                     onClick={() => handleCrewsData(item)}
                   ></NavLink>
-                );
+                )
               })}
             </div>
           </div>

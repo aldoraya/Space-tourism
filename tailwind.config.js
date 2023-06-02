@@ -15,6 +15,9 @@ module.exports = {
         'crew-dekstop': "url('../public/assets/crew/background-crew-desktop.jpg')",
         'crew-mobile': "url('../public/assets/crew/background-crew-mobile.jpg')",
         'crew-tablet': "url('../public/assets/crew/background-crew-tablet.jpg')",
+        'technology-dekstop': "url('../public/assets/technology/background-technology-desktop.jpg')",
+        'technology-mobile': "url('../public/assets/technology/background-technology-mobile.jpg')",
+        'technology-tablet': "url('../public/assets/technology/background-technology-tablet.jpg')",
       }
     },
   },
