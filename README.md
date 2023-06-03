@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# Frontend Mentor - Space tourism website solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+![preview](./public/preview.jpg)
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+=> Dekstop
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![home-dekstop](./screenshot/home-dekstop.png)
+![destination-dekstop](./screenshot/destination-dekstop.png)
+![crew-dekstop](./screenshot/crew-dekstop.png)
+![technology-dekstop](./screenshot/technology-dekstop.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+=> Tablet
 
-### `npm run eject`
+![home-tablet](./screenshot/home-tablet.png)
+![destination-tablet](./screenshot/destination-tablet.png)
+![crew-tablet](./screenshot/crew-tablet.png)
+![technology-tablet](./screenshot/technology-tablet.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+=> Mobile
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![home-mobile](./screenshot/home-mobile.png)
+![menu-mobile](./screenshot/menu-mobile.png)
+![destination-mobile](./screenshot/destination-mobile.png)
+![crew-mobile](./screenshot/crew-mobile.png)
+![technology-mobile](./screenshot/technology-mobile.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Links
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## Learn More
+## My Process
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built with
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Dekstop-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
 
-### Code Splitting
+### What I learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+get data from json using useState :
 
-### Analyzing the Bundle Size
+```js
+const Destination = () => {
+  const [destinationData, setDestinationData] = useState({
+    id: planets.destinations[0].id,
+    image: planets.destinations[0].images.png,
+    name: planets.destinations[0].name,
+    description: planets.destinations[0].description,
+    distance: planets.destinations[0].distance,
+    travel: planets.destinations[0].travel,
+  });
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+add a transparent background to the explore button on hover using Tailwind CSS :
 
-### Making a Progressive Web App
+```js
+<div className="lg:absolute lg:right-6 lg:bottom-10 lg:w-[28rem] lg:h-[28rem] lg:hover:w-[28rem] lg:hover:h-[28rem] rounded-full hover:bg-white hover:bg-opacity-10 duration-1000 hover:duration-1000 ease-in-out">
+    <div className="w-36 h-36 md:w-60 md:h-60 lg:w-72 lg:h-72 lg:relative lg:left-20 lg:top-20 hover:bg-opacity-100 rounded-full bg-white z-10">
+        <p className="text-black text-xl md:text-2xl lg:text-4xl uppercase text-center relative top-16 md:top-28 lg:top-32">
+            explore
+        </p>
+    </div>
+</div>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Useful resources
 
-### Advanced Configuration
+- [Example resource 1](https://www.codementor.io/@giorgiasambrotta/hamburger-menu-with-react-and-tailwind-css-1qx6sruvua) - This is an article that helped me create a sidebar menu in mobile.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/aldoraya_)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+if you have any suggestions please contact me on my email aldorayaalhakim@gmail.com

@@ -36,12 +36,17 @@ const Destination = () => {
             src={destinationData.image}
             alt={destinationData.name}
           />
-          <div className="relative lg:left-48 top-60 md:top-72 lg:top-28 lg:mr-40">
+          <div className="relative lg:left-48 top-60 md:top-72 lg:top-16 lg:mr-40">
             <div className="flex flex-1 justify-center lg:justify-normal uppercase space-x-6 lg:space-x-8">
               {planets.destinations.map((item) => {
                 return (
                   <div
-                    className={`${destinationData.name === item.name ? 'hover:border-b hover:border-gray-400 text-sm md:text-base border-b border-b-white' : 'hover:border-b hover:border-gray-400 text-sm md:text-base'}`}
+                    style={{ WebkitTapHighlightColor: "transparent" }}
+                    className={`${
+                      destinationData.name === item.name
+                        ? "hover:border-b hover:border-gray-400 text-sm md:text-base border-b border-b-white"
+                        : "hover:border-b hover:border-gray-400 text-sm md:text-base text-gray-400"
+                    }`}
                     key={item.id}
                     id={item.name.toLowerCase()}
                     onClick={() => handleDestinationsData(item)}
@@ -60,17 +65,17 @@ const Destination = () => {
               {destinationData.description}
             </div>
             <div className="block mt-8 lg:mt-14">
-              <nav className="w-auto h-0.5 bg-gray-400"></nav>
+              <nav className="w-auto h-[0.5px] bg-gray-700"></nav>
             </div>
             <div className="flex flex-col md:flex-row justify-center md:justify-center lg:justify-start md:space-x-14 uppercase">
               <div className="block mt-5 text-xs md:text-sm">
-                <p>avg. distance</p>
+                <p className="text-gray-400">avg. distance</p>
                 <p className="mt-2 text-xl md:text-2xl">
                   {destinationData.distance}
                 </p>
               </div>
-              <div className="block mt-7 md:mt-5 uppercase text-xs">
-                <p>est. travel time</p>
+              <div className="block mt-7 md:mt-5 uppercase text-xs md:text-sm">
+                <p className="text-gray-400">est. travel time</p>
                 <p className="mt-2 text-xl md:text-2xl">
                   {destinationData.travel}
                 </p>

@@ -31,11 +31,12 @@ const Technology = () => {
             <p>space launch 101</p>
           </div>
           <div className="block lg:flex relative lg:bottom-10 w-full h-full">
-            <div className="flex flex-1 lg:flex-col justify-center lg:justify-start space-x-4 lg:space-x-0 lg:space-y-8 absolute top-[12.5rem] md:top-[24rem] lg:top-60 w-full">
+            <div className="flex flex-1 lg:flex-col justify-center lg:justify-start space-x-4 lg:space-x-0 lg:space-y-8 absolute top-[12.5rem] md:top-[24rem] lg:top-48 w-full">
               {data.technology.map((item) => {
                 return (
                   <NavLink
-                    id={`circle-${item.id}`}
+                    key={item.id}
+                    style={{ "WebkitTapHighlightColor": "transparent" }}
                     className={`${
                       technologyData.name === item.name
                         ? "w-8 h-8 md:w-12 md:h-12 lg:w-24 lg:h-24 rounded-full bg-white text-center text-black"
@@ -43,21 +44,21 @@ const Technology = () => {
                     }`}
                     onClick={() => handleTechnologysData(item)}
                   >
-                    <p className="text-sm md:text-xl lg:text-3xl relative top-2 md:top-3 lg:top-8">
+                    <p className="text-sm md:text-xl lg:text-3xl relative top-1.5 md:top-3 lg:top-8">
                       {item.id}
                     </p>
                   </NavLink>
                 );
               })}
             </div>
-            <div className="block relative top-64 md:top-[29rem] lg:top-14 lg:flex flex-col justify-center lg:mx-48">
+            <div className="block relative top-64 md:top-[29rem] lg:top-6 lg:flex flex-col justify-center lg:mx-48">
               <p className="uppercase text-sm lg:text-base text-gray-400">
                 the terminology ...
               </p>
               <p className="uppercase mt-1 lg:mt-4 text-2xl lg:text-6xl ">
                 {technologyData.name}
               </p>
-              <p className="mt-3 lg:mt-6 text-sm lg:text-[19px] text-gray-400 mx-10 md:mx-52 lg:mr-[19rem] lg:ml-0 leading-6 lg:leading-8 font-sans">
+              <p className="mt-3 lg:mt-6 text-xs md:text-sm lg:text-[19px] text-gray-400 mx-10 md:mx-52 lg:mr-[19rem] lg:ml-0 leading-6 lg:leading-8 font-sans">
                 {technologyData.description}
               </p>
             </div>

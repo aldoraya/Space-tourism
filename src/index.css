@@ -45,7 +45,7 @@
   
   .animate-fade-in-left {
     animation-name: fade-in-left;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
   }
 
@@ -62,7 +62,24 @@
   
   .animate-fade-in-right {
     animation-name: fade-in-right;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
   }
   
+
+  @keyframes fade-in-top {
+    0% {
+      opacity: 0;
+      transform: translatey(-1000px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
+  
+  .animate-fade-in-top {
+    animation-name: fade-in-top;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }

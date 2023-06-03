@@ -49,15 +49,16 @@ const Crew = () => {
                 return (
                   <NavLink
                     key={item.id}
+                    style={{ WebkitTapHighlightColor: "transparent" }}
                     className={`${
                       crewData.name === item.name
                         ? "rounded-full w-3 h-3 lg:w-4 lg:h-4 bg-white"
-                        : "rounded-full w-3 h-3 lg:w-4 lg:h-4 bg-gray-500"
+                        : "rounded-full w-3 h-3 lg:w-4 lg:h-4 bg-gray-500 hover:bg-gray-400"
                     }`}
                     id={item.id}
                     onClick={() => handleCrewsData(item)}
                   ></NavLink>
-                )
+                );
               })}
             </div>
           </div>
