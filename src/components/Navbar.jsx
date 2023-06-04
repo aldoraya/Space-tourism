@@ -36,7 +36,7 @@ const Navbar = () => {
         <ul
           className={
             isNavOpen
-              ? "absolute md:flex w-[65%] md:w-auto h-screen md:h-auto space-y-6 md:space-y-0 md:space-x-14 text-base bottom-0 md:bottom-6 right-0 md:right-14 flex-1 justify-end p-10 bg-transparent backdrop-blur-[6px] text-white ml-16 z-20 animate-fade-in-right"
+              ? "absolute md:flex w-[65%] md:w-auto h-screen md:h-auto space-y-6 md:space-y-0 md:space-x-14 text-base top-8 bottom-0 md:bottom-6 right-0 md:right-14 flex-1 justify-end p-10 bg-transparent backdrop-blur-[6px] text-white ml-16 z-20 animate-fade-in-right"
               : "hidden w-full h-full md:relative md:flex md:space-x-10 lg:space-x-14 text-base md:bottom-6 lg:right-0 md:pr-20 lg:pr-24 flex-1 justify-end p-10 bg-transparent backdrop-blur-[6px] text-white ml-16 md:ml-0 lg:ml-16 z-20"
           }
         >
@@ -59,7 +59,7 @@ const Navbar = () => {
               }
               onClick={handleNavLinkClick}
             >
-              <div className="w-full hover:border-b-4 hover:border-white">
+              <div className="w-full md:hover:border-b-4 md:hover:border-white">
                 <div className="flex space-x-2 relative bottom-10 uppercase tracking-[0.2em]">
                   <nav className="font-bold">00</nav>
                   <p className="text-gray-200">home</p>
@@ -78,7 +78,7 @@ const Navbar = () => {
               }
               onClick={handleNavLinkClick}
             >
-              <div className="w-full hover:border-b-4 hover:border-white">
+              <div className="w-full md:hover:border-b-4 md:hover:border-white">
                 <div className="flex space-x-2 relative bottom-10 uppercase tracking-[0.2em]">
                   <nav className="font-bold">01</nav>
                   <p className="text-gray-200">destination</p>
@@ -97,7 +97,7 @@ const Navbar = () => {
               }
               onClick={handleNavLinkClick}
             >
-              <div className="w-full hover:border-b-4 hover:border-white">
+              <div className="w-full md:hover:border-b-4 md:hover:border-white">
                 <div className="flex space-x-2 relative bottom-10 uppercase tracking-[0.2em]">
                   <nav className="font-bold">02</nav>
                   <p className="text-gray-200">crew</p>
@@ -116,7 +116,7 @@ const Navbar = () => {
               }
               onClick={handleNavLinkClick}
             >
-              <div className="w-full hover:border-b-4 hover:border-white">
+              <div className="w-full md:hover:border-b-4 md:hover:border-white">
                 <div className="flex space-x-2 relative bottom-10 uppercase tracking-[0.2em]">
                   <nav className="font-bold">03</nav>
                   <p className="text-gray-200">technology</p>

@@ -24,7 +24,7 @@ const Destination = () => {
     });
   };
   return (
-    <div className="w-full h-screen lg:h-full bg-no-repeat bg-destination-mobile md:bg-destination-tablet lg:bg-destination-dekstop bg-cover overflow-y-scroll no-scrollbar">
+    <section className="w-full h-screen lg:h-full bg-no-repeat bg-destination-mobile md:bg-destination-tablet lg:bg-destination-dekstop bg-cover overflow-y-scroll no-scrollbar">
       <div className="text-white text-center lg:text-left p-8 md:pt-10 md:px-32 lg:p-44 block lg:flex relative top-24 md:top-36 lg:top-12 w-full h-0 lg:h-screen z-0 animate-fade-in-left">
         <div className="flex flex-1 justify-center md:justify-normal tracking-widest uppercase space-x-4 text-lg md:text-xl lg:text-2xl w-full h-full">
           <nav className="text-gray-500 font-bold">01</nav>
@@ -84,7 +84,7 @@ const Destination = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

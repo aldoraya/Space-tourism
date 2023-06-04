@@ -9,10 +9,10 @@ const Home = () => {
           <p className="text-base md:text-2xl lg:text-[28px] text-[#D0D6F9] uppercase font-barlow-condensed font-[50] tracking-widest">
             So, you want to travel to
           </p>
-          <p className="text-7xl md:text-[150px] uppercase relative lg:left-5 pt-6 lg:py-10">
+          <p className="text-7xl md:text-[150px] uppercase pt-6 lg:py-10">
             space
           </p>
-          <p className="lg:w-[45%] leading-6 md:leading-8 lg:leading:-10 text-gray-400 lg:text-gray-300 text-xs md:text-xl lg:text-lg text-[18px] font-sans pt-6 lg:pt-0">
+          <p className="lg:w-[67%] leading-6 md:leading-8 lg:leading:-10 text-gray-400 lg:text-gray-300 text-xs md:text-xl lg:text-lg text-[18px] font-sans pt-6 lg:pt-0">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
@@ -24,7 +24,7 @@ const Home = () => {
             to="/destination"
             style={{ WebkitTapHighlightColor: "transparent" }}
           >
-            <div className="lg:absolute lg:right-8 lg:bottom-0 lg:w-[24rem] lg:h-[24rem] lg:hover:w-[24rem] lg:hover:h-[24rem] rounded-full hover:bg-white hover:bg-opacity-10 duration-1000 hover:duration-1000 ease-in-out">
+            <div className="lg:relative lg:right-8 lg:bottom-0 lg:w-[24rem] lg:h-[24rem] lg:hover:w-[24rem] lg:hover:h-[24rem] rounded-full hover:bg-white hover:bg-opacity-10 duration-1000 hover:duration-1000 ease-in-out">
               <div className="w-36 h-36 md:w-60 md:h-60 lg:w-60 lg:h-60 lg:absolute lg:top-16 lg:right-[4.5rem] hover:bg-opacity-100 rounded-full bg-white z-10">
                 <p className="text-black text-xl md:text-2xl lg:text-3xl uppercase text-center relative top-16 md:top-28 lg:top-24">
                   explore
